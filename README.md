@@ -7,6 +7,13 @@ Bienvenue dans **EuroMillions Analyzer**, une application web fullstack qui affi
 
 ---
 
+## ☁️ Lien vers la version en production
+🌍 Frontend
+🔗 https://euromillions-analyzer.netlify.app
+
+🔙 Backend
+🔗 https://euromillions-analyzer.onrender.com
+
 ## 🧱 Technologies utilisées
 
 ### Frontend
