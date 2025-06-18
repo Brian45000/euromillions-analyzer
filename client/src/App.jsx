@@ -44,7 +44,7 @@ function App() {
   const [flashCount, setFlashCount] = useState(5);
 
   const fetchDraws = () => {
-    const url = new URL('http://localhost:3001/api/draws');
+    const url = new URL('https://euromillions-analyzer.onrender.com/api/draws');
     if (fromDate) url.searchParams.set('from', fromDate);
     if (toDate) url.searchParams.set('to', toDate);
     url.searchParams.set('page', drawPage);
@@ -59,7 +59,7 @@ function App() {
   };
 
   const fetchStats = () => {
-    fetch(`http://localhost:3001/api/statistics?page=${comboPage}&limit=10`)
+    fetch(`https://euromillions-analyzer.onrender.com/api/statistics?page=${comboPage}&limit=10`)
       .then(res => res.json())
       .then(data => {
         setStats(data);

@@ -16,6 +16,10 @@ const fetchDraws = async () => {
   }
 };
 
+app.get('/', (req, res) => {
+  res.send(`Bienvenue sur l'API EuroMillions Analyzer !`);
+})
+
 app.get('/api/draws', async (req, res) => {
   try {
     await fetchDraws();
